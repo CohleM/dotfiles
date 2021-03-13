@@ -33,4 +33,7 @@ let NERDTreeDirArrows = 1
 nnoremap <silent> <C-f> :Files<CR>
 nnoremap <silent> <Leader>f :Rg<CR>
 
-
+if !has("gui_running")
+    set t_Co=256
+        set term=screen-256color
+endif
