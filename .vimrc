@@ -13,13 +13,18 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+
+
 call plug#end()
+
+
 
 
 "Color themes
 
 let g:airline#extensions#tabline#enabled = 1
-let g:solarized_termcolors=256
+let g:airline#extensions#tabline#show_buffers = 0
+"let g:solarized_termcolors=256
 let g:airline_powerline_fonts = 1
 let g:airline_theme='minimalist'
 let mapleader = ";"
@@ -48,3 +53,4 @@ if !has("gui_running")
     set t_Co=256
         set term=screen-256color
 endif
+
